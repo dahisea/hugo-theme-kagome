@@ -27,10 +27,10 @@ older:
 
 theme:
   light:
-    other: 明るい
+    other: 明
 
   dark:
-    other: 暗黒
+    other: 暗
 
   auto: 
     other: 自動

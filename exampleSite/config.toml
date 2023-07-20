@@ -1,5 +1,5 @@
 baseURL = "https://example.com"
-languageCode = "en-us"
+languageCode = "zh-tw"
 title = "梨花细雨不见鹿"
 theme = "kagome"
 paginate = 7
@@ -80,8 +80,6 @@ hasCJKLanguage = true
   # TOC目录出现字符长度限制
   toc_show_len = 300
 
-  [params.analytics]
-    baidu = ""
 
   [params.widget]
     # 相关文章推荐数量

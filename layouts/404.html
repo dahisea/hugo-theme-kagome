@@ -40,8 +40,6 @@
     {{- $script := $js | js.Build $opts | resources.Fingerprint "sha256" -}}
     <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet">
   </head>
 <body>
   <main class="container">
