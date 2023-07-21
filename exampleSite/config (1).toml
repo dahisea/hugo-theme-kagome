@@ -2,16 +2,17 @@ baseURL = "https://dahi.icu/"
 languageCode = "zh-tw"
 title = "Dahi"
 theme = "kagome"
-paginate = 7
-copyright = "© Dahi."
+paginate = 15
+copyright = "轉載請註明出處  © Dahi.icu"
 hasCJKLanguage = true
+googleAnalytics = 'G-PYKTMJEK97'
 
-# 作者信息
 [author]
   name = "Dahi"
   email = "expect@dahi.icu"
   description = "Genshin, start."
-  avatar = "https://coolapk-oss-image.oss-cn-hangzhou.aliyuncs.com/feed/2023/0711/07/1641832_ef9c1022_2726_318_968@1080x1080.png"
+  avatar = "https://coolapk-oss-image.oss-cn-hangzhou.aliyuncs.com/feed/2023/0721/16/999_09be2a00_6933_9634_588@1024x1024.png"
+  
 
 # 菜单/导航栏
 [menu]
@@ -44,23 +45,27 @@ hasCJKLanguage = true
     url = "https://github.com/dahisea"
     weight = 1
   [[menu.social]]
+    identifier = "telegram"
+    name = "telegram"
+    url = "https://t.me/dahi_no_chatbot"
+    weight = 2
+  [[menu.social]]
     identifier = "kuan"
     name = "kuan"
     url = "https://www.coolapk.com/u/1641832"
-    weight = 2
+    weight = 3
 
 
 # 主题相关配置项
 [params]
-  keywords = ['']
-  description = ""
+  keywords = ['Dahi']
+  description = "A blog."
   mainSections = ["posts"]
   # 国内备案号
-  beian = ""
+  beian = "萌ICP备20213149号"
   # TOC目录出现字符长度限制
   toc_show_len = 300
-
-
+  
   [params.widget]
     # 相关文章推荐数量
     articles_count = 6
@@ -69,14 +74,3 @@ hasCJKLanguage = true
     # 标签相关显示数量
     tags_count = 12
 
-  [params.aplayer]
-    theme = "#b7daff"
-    autoplay = false
-    loop = "none"
-    mutex = true
-
-  [params.dplayer]
-    theme = "#b7daff"
-    autoplay = false
-    loop = false
-    mutex = true

@@ -2,7 +2,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="shortcut icon" href="https://coolapk-oss-image.oss-cn-hangzhou.aliyuncs.com/feed/2023/0721/16/999_09be2a00_6933_9634_588@1024x1024.png" />
   {{ if or .Params.author .Site.Author.name }} {{/* author */}}
     <meta name="author" content="{{- or .Params.author .Site.Author.name -}}">
   {{ end }}
@@ -24,11 +24,9 @@
   {{ end }}
 
   {{ hugo.Generator }}
-  
-  
   {{ $title := .Site.Title }}
   {{ with .Params.Title }}
-  {{ $title = printf "%s 🌟 %s" . $title }}
+  {{ $title = printf "%s 🏷️ %s" . $title }}
   {{ end }}
   <title>{{- $title -}}</title>
 
@@ -46,8 +44,13 @@
   {{- $opts := dict "targetPath" "assets/js/main.min.js" "minify" hugo.IsProduction -}}
   {{- $script := $js | js.Build $opts | resources.Fingerprint "sha256" -}}
   <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-  
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
+  {{ template "_internal/google_analytics_async.html" . }}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3758644447684310"
+     crossorigin="anonymous"></script>
+  <script>
+  !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3FLq11s1jeUgtzQA",ck:"3FLq11s1jeUgtzQA",autoTrack:true});
+  </script>
 </head>
