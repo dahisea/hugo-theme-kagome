@@ -7,9 +7,9 @@
 
 # kagome 一个卡片类拟态风格的Hugo主题
 
-![Kagome](images/ScreenshotM.png)
+!(images/ScreenshotM.png)
 
-![Kagome](images/ScreenshotPC.png)
+!(images/ScreenshotPC.png)
 
 ### Document
 
