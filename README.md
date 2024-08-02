@@ -5,12 +5,11 @@
 其他的地方有很多适用性修改，不想管了（
 
 
-
 # kagome 一个卡片类拟态风格的Hugo主题
 
-![Kagome](images/screenshotM.png)
+![Kagome](images/ScreenshotM.png)
 
-![Kagome](images/screenshotPC.png)
+![Kagome](images/ScreenshotPC.png)
 
 ### Document
 
