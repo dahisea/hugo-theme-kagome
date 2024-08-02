@@ -1,0 +1,46 @@
+baseURL = "https://dahi.icu/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+title = "ダヒのブログ"
+theme = "kagome"
+paginate = 8
+copyright = "©Dahi.ICU"
+hasCJKLanguage = true
+  
+# 作者信息
+[author]
+  name = "Dahi"
+  description = "願君有朝一日與重要之人重逢"
+  avatar = "https://oxs.dahi.icu/avatar.png"
+  
+[menu]
+  [[menu.main]]
+    identifier = "tomodachi"
+    name = "Friends"
+    url = "/tomodachi/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.social]]
+    identifier = "github"
+    name = "github"
+    url = "https://github.com/dahisea"
+    weight = 1
+    
+
+
+
+[params]
+  keywords = ['Dahi']
+  description = "時光流轉，願你有一天能與重要的人重逢"
+  mainSections = ["posts"]
+  
+  [params.widget]
+    articles_count = 9
+    categories_count = 3
+    tags_count = 6
+

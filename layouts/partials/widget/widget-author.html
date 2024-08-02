@@ -5,7 +5,7 @@
       {{ with $.Site.Author.avatar }}
       <img class="author-avatar soft-size--round soft-style--box" src="{{ . }}" alt="{{ $.Site.Author.name }}">
       {{ end }}
-      <h2 class="author-name text-ellipsis">{{ $.Site.Author.name }}</h2>
+      <p class="author-name text-ellipsis">{{ $.Site.Author.name }}</p>
       {{ with $.Site.Author.description }}
       <p class="author-desc text-ellipsis">{{ . }}</p>
       {{ end }}

@@ -10,9 +10,9 @@
     <ul class="pagination-list">
       <li class="page-item"> {{/* prev page */}}
         {{ if $pag.HasPrev }}
-          <a href="{{ $pag.Prev.URL }}" class="page-link" aria-label="First">ʚ</a>
+          <a href="{{ $pag.Prev.URL }}" class="page-link" aria-label="First">«</a>
         {{ else }}
-          <span>ʚ</span>
+          <span>«</span>
         {{ end }}
       </li>
 
@@ -38,7 +38,6 @@
         <li class="page-item"><span>…</span></li>
       {{ end }}
 
-
       {{- with $pag.Last }} {{/* last page */}}
       <li class="page-item">
         {{ if $isLast }}
@@ -48,12 +47,11 @@
         {{ end }}
       </li>
       {{- end }}
-
       <li class="page-item"> {{/* next page */}}
         {{ if $pag.HasNext }}
-          <a href="{{ $pag.Next.URL }}" class="page-link" aria-label="First">ɞ</a>
+          <a href="{{ $pag.Next.URL }}" class="page-link" aria-label="First">»</a>
         {{ else }}
-          <span>ɞ</span>
+          <span>»</span>
         {{ end }}
       </li>
     </ul>

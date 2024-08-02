@@ -17,7 +17,7 @@
   </h2>
   <div class="widget-body">
     <ul class="post-list">
-      {{ $count := or .Site.Params.widget.articles_count 6 }}
+      {{ $count := or .Site.Params.widget.articles_count 5 }}
       {{ range first $count $articles }}
         <li class="post-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}

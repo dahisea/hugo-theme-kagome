@@ -8,17 +8,10 @@
   {{ end }}
 
   {{ if ne $Enable true }}
-  {{- partial "disqus.html" . -}}
+  
+  
   {{ end }}
 
-  <div class="article-paging">
-    {{ with .NextInSection }}
-      {{ partial "card/card-paging.html" . }}
-    {{ end }}
-    {{ with .PrevInSection }}
-      {{ partial "card/card-paging.html" . }}
-    {{ end }}
-  </div>
 {{ end }}
 
 {{ define "widget" }}
