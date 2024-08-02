@@ -6,10 +6,10 @@
 
 
 # kagome 一个卡片类拟态风格的Hugo主题
-
+1
 ![](images/ScreenshotM.png)
 
-
+1
 ![](images/ScreenshotPC.png)
 
 ### Document
